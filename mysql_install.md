@@ -1,4 +1,4 @@
-#mysql在非root权限下安装步骤
+# mysql在非root权限下安装步骤
 1、下载二进制安装包并解压 
 2、设置PATH路径
 ```bash
