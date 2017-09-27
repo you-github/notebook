@@ -14,7 +14,7 @@ mysqld_safe --defaults-file=/home/ybq-2/mysql-data/my.cnf --basedir=/home/ybq-2/
 --datadir=/home/ybq-2/mysql-data/data --skip-grant-tables
 ```
 
-##my.cnf配置
+## my.cnf配置
 ```bash
 # For advice on how to change settings please see
 # http://dev.mysql.com/doc/refman/5.6/en/server-configuration-defaults.html
@@ -55,7 +55,7 @@ sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 ```
 5、设置密码以及创建用户、数据库以及给用户授权
 
-##去掉--skip-grant-tables（记得这一步）
+## 去掉--skip-grant-tables（记得这一步）
 
 ```bash
 //root登录设置密码
