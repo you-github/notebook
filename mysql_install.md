@@ -1,11 +1,16 @@
 # mysql在非root权限下安装步骤
+
 1、下载二进制安装包并解压 
 2、设置PATH路径
+
 ```bash
 source /home/ybq-2/ENV/CAD/database/mysql/env.bashrc
 ```
+
 3、初始化数据库
+
 ```bash
+初始化数据库
 /home/ybq-2/ENV/CAD/database/mysql/scripts/mysql_install_db --user=ybq-2 --basedir=/home/ybq-2/ENV/CAD/database/mysql --datadir=/home/ybq-2/mysql-data/data
 ```
 4、启动mysql数据库
@@ -13,6 +18,7 @@ source /home/ybq-2/ENV/CAD/database/mysql/env.bashrc
 mysqld_safe --defaults-file=/home/ybq-2/mysql-data/my.cnf --basedir=/home/ybq-2/ENV/CAD/database/mysql --ledir=/home/ybq-2/ENV/CAD/database/mysql/bin \
 --datadir=/home/ybq-2/mysql-data/data --skip-grant-tables
 ```
+
 
 ## my.cnf配置
 ```bash
@@ -86,6 +92,8 @@ grant all on avk.* to 'raven'@'localhost';
 flush privileges;
 
 ```
+
+
 
 
 
