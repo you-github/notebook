@@ -79,15 +79,15 @@ exit;
 
 mysql -uroot -p123456 -hlocalhost -P3306
 //远程访问
-create user 'raven'@'%' identified by '123456';
+create user 'tmpsql'@'%' identified by '123456';
 
-grant all on avk.* to 'raven'@'%';
+grant all on avk.* to 'tmpsql'@'%';
 
 flush privileges;
 //本地访问
-create user 'raven'@'localhost' identified by '123456';
+create user 'tmpsql'@'localhost' identified by '123456';
 
-grant all on avk.* to 'raven'@'localhost';
+grant all on avk.* to 'tmpsql'@'localhost';
 
 flush privileges;
 
